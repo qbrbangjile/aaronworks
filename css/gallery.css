@@ -1,0 +1,218 @@
+:root {
+    --thumbs-per-row: var(--thumb-per-row, 5);
+}
+
+.works-detail-gallery {
+    display: flex;
+    align-items: flex-start;
+    
+    margin-bottom: 200px;
+    margin-top: 120px;
+
+    border-bottom: 1px solid #dca54a;
+    padding-bottom: 150px;
+
+    gap: 50px;
+}
+
+.detail-gallery {
+    width: 30%;
+    height: auto;
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 60px;
+}
+
+.detail-gallery div h1 {
+    margin: 15px 0;
+}
+
+.detail-gallery div h2,
+.detail-gallery div p {
+    margin: 5px 0;
+}
+
+.detail-gallery div h1 {
+    font-size: 40px;
+    font-family: "Unbounded", sans-serif;
+    font-weight: 600;
+    line-height: 20px;
+}
+
+.detail-gallery div h2 {
+    font-size: 19px;
+    font-family: "Unbounded", sans-serif;
+    font-weight: 600;
+    line-height: 20px;
+}
+
+.detail-gallery div p {
+    font-size: 17px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    line-height: 27px;
+}
+
+.detail-gallery-2 {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.gallery-container-70 {
+    width: 70%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px
+}
+
+.gallery-container-100 {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px
+}
+
+input {
+    display: none;
+}
+
+.gallery {
+    position: relative;
+    display: flex;
+
+    width: 100%;
+    height: auto;
+}
+
+.gallery-placeholder {
+    width: 100%;
+    padding-bottom: var(--img-ratio, calc(900 / 1600 * 100%));
+    visibility: hidden;
+    pointer-events: none;
+}
+
+.gallery-img {
+    opacity: 0;
+
+    width: 100%;
+    height:auto;
+    max-height: 1080px;
+
+    pointer-events: none;
+    margin: 0;
+    position: absolute;
+
+    transition: opacity 0.5s ease;
+}
+
+.gallery img {
+    border-radius: 15px;
+}
+
+.thumbnails {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 0;
+}
+
+.thumb-img {
+    width: calc((100% - (10px * (var(--thumbs-per-row) - 1))) / var(--thumbs-per-row));
+    cursor: pointer;
+}
+
+.thumb-img img {
+    width: 100%;
+    display: block;
+    border-radius: 10px;
+    opacity: 0.5;
+    transition: opacity 0.3s ease;
+}
+
+.thumb-img:hover img {
+    opacity: 0.8;
+}
+
+#gallery-1:checked ~ #i1,
+#gallery-2:checked ~ #i2,
+#gallery-3:checked ~ #i3,
+#gallery-4:checked ~ #i4,
+#gallery-5:checked ~ #i5,
+#gallery-6:checked ~ #i6,
+#gallery-7:checked ~ #i7,
+#gallery-8:checked ~ #i8,
+#gallery-9:checked ~ #i9,
+#gallery-10:checked ~ #i10,
+#gallery-11:checked ~ #i11,
+#gallery-12:checked ~ #i12,
+#gallery-13:checked ~ #i13,
+#gallery-14:checked ~ #i14,
+#gallery-15:checked ~ #i15,
+#gallery-16:checked ~ #i16,
+#gallery-17:checked ~ #i17,
+#gallery-18:checked ~ #i18,
+#gallery-19:checked ~ #i19,
+#gallery-20:checked ~ #i20,
+#gallery-21:checked ~ #i21 {
+    pointer-events: auto;
+    opacity: 1;
+    z-index: 1;
+}
+
+.gallery-container-70:has(#gallery-1:checked) .thumbnails label[for="gallery-1"] img,
+.gallery-container-70:has(#gallery-2:checked) .thumbnails label[for="gallery-2"] img,
+.gallery-container-70:has(#gallery-3:checked) .thumbnails label[for="gallery-3"] img,
+.gallery-container-70:has(#gallery-4:checked) .thumbnails label[for="gallery-4"] img,
+.gallery-container-70:has(#gallery-5:checked) .thumbnails label[for="gallery-5"] img,
+.gallery-container-70:has(#gallery-6:checked) .thumbnails label[for="gallery-6"] img,
+.gallery-container-70:has(#gallery-7:checked) .thumbnails label[for="gallery-7"] img,
+.gallery-container-70:has(#gallery-8:checked) .thumbnails label[for="gallery-8"] img,
+.gallery-container-70:has(#gallery-9:checked) .thumbnails label[for="gallery-9"] img,
+.gallery-container-70:has(#gallery-10:checked) .thumbnails label[for="gallery-10"] img,
+.gallery-container-70:has(#gallery-11:checked) .thumbnails label[for="gallery-11"] img,
+.gallery-container-70:has(#gallery-12:checked) .thumbnails label[for="gallery-12"] img,
+.gallery-container-70:has(#gallery-13:checked) .thumbnails label[for="gallery-13"] img,
+.gallery-container-70:has(#gallery-14:checked) .thumbnails label[for="gallery-14"] img,
+.gallery-container-70:has(#gallery-15:checked) .thumbnails label[for="gallery-15"] img,
+.gallery-container-70:has(#gallery-16:checked) .thumbnails label[for="gallery-16"] img,
+.gallery-container-70:has(#gallery-17:checked) .thumbnails label[for="gallery-17"] img,
+.gallery-container-70:has(#gallery-18:checked) .thumbnails label[for="gallery-18"] img,
+.gallery-container-70:has(#gallery-19:checked) .thumbnails label[for="gallery-19"] img,
+.gallery-container-70:has(#gallery-20:checked) .thumbnails label[for="gallery-20"] img,
+.gallery-container-70:has(#gallery-21:checked) .thumbnails label[for="gallery-21"] img {
+    opacity: 1 !important; 
+}
+
+.gallery-container-100:has(#gallery-1:checked) .thumbnails label[for="gallery-1"] img,
+.gallery-container-100:has(#gallery-2:checked) .thumbnails label[for="gallery-2"] img,
+.gallery-container-100:has(#gallery-3:checked) .thumbnails label[for="gallery-3"] img,
+.gallery-container-100:has(#gallery-4:checked) .thumbnails label[for="gallery-4"] img,
+.gallery-container-100:has(#gallery-5:checked) .thumbnails label[for="gallery-5"] img,
+.gallery-container-100:has(#gallery-6:checked) .thumbnails label[for="gallery-6"] img,
+.gallery-container-100:has(#gallery-7:checked) .thumbnails label[for="gallery-7"] img,
+.gallery-container-100:has(#gallery-8:checked) .thumbnails label[for="gallery-8"] img,
+.gallery-container-100:has(#gallery-9:checked) .thumbnails label[for="gallery-9"] img,
+.gallery-container-100:has(#gallery-10:checked) .thumbnails label[for="gallery-10"] img,
+.gallery-container-100:has(#gallery-11:checked) .thumbnails label[for="gallery-11"] img,
+.gallery-container-100:has(#gallery-12:checked) .thumbnails label[for="gallery-12"] img,
+.gallery-container-100:has(#gallery-13:checked) .thumbnails label[for="gallery-13"] img,
+.gallery-container-100:has(#gallery-14:checked) .thumbnails label[for="gallery-14"] img,
+.gallery-container-100:has(#gallery-15:checked) .thumbnails label[for="gallery-15"] img,
+.gallery-container-100:has(#gallery-16:checked) .thumbnails label[for="gallery-16"] img,
+.gallery-container-100:has(#gallery-17:checked) .thumbnails label[for="gallery-17"] img,
+.gallery-container-100:has(#gallery-18:checked) .thumbnails label[for="gallery-18"] img,
+.gallery-container-100:has(#gallery-19:checked) .thumbnails label[for="gallery-19"] img,
+.gallery-container-100:has(#gallery-20:checked) .thumbnails label[for="gallery-20"] img,
+.gallery-container-100:has(#gallery-21:checked) .thumbnails label[for="gallery-21"] img {
+    opacity: 1 !important; 
+}

@@ -1,0 +1,96 @@
+/* ChillDINGothic Regular */
+@font-face {
+    font-family: 'ChillDINGothic';
+    src: url('../fonts/ChillDINGothic_Regular.otf') format('opentype'),
+         url('../fonts/ChillDINGothic_Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* ChillDINGothic Medium */
+@font-face {
+    font-family: 'ChillDINGothic';
+    src: url('../fonts/ChillDINGothic_Medium.otf') format('opentype'),
+         url('../fonts/ChillDINGothic_Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
+/* ChillDINGothic SemiBold */
+@font-face {
+    font-family: 'ChillDINGothic';
+    src: url('../fonts/ChillDINGothic_SemiBold.otf') format('opentype'),
+         url('../fonts/ChillDINGothic_SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+}
+
+/* ChillDINGothic Bold */
+@font-face {
+    font-family: 'ChillDINGothic';
+    src: url('../fonts/ChillDINGothic_Bold.otf') format('opentype'),
+         url('../fonts/ChillDINGothic_Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+/* ChillDINGothic Light */
+@font-face {
+    font-family: 'ChillDINGothic';
+    src: url('../fonts/ChillDINGothic_Light.otf') format('opentype'),
+         url('../fonts/ChillDINGothic_Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+
+
+
+
+/* HYMingYue-45W */
+@font-face {
+    font-family: 'HYMingYue';
+    src: url('../fonts/HYMingYue-45W.ttf') format('truetype');
+    font-weight: 400;  /* Regular 字重 */
+    font-style: normal;
+}
+
+/* HYMingYue-55W */
+@font-face {
+    font-family: 'HYMingYue';
+    src: url('../fonts/HYMingYue-55W.ttf') format('truetype');
+    font-weight: 500;  /* Medium 字重 */
+    font-style: normal;
+}
+
+/* HYMingYue-65W */
+@font-face {
+    font-family: 'HYMingYue';
+    src: url('../fonts/HYMingYue-65W.ttf') format('truetype');
+    font-weight: 600;  /* SemiBold 字重 */
+    font-style: normal;
+}
+
+/* HYMingYue-75W */
+@font-face {
+    font-family: 'HYMingYue';
+    src: url('../fonts/HYMingYue-75W.ttf') format('truetype');
+    font-weight: 700;  /* Bold 字重 */
+    font-style: normal;
+}
+
+/* HYMingYue-85W */
+@font-face {
+    font-family: 'HYMingYue';
+    src: url('../fonts/HYMingYue-85W.ttf') format('truetype');
+    font-weight: 800;  /* ExtraBold 字重 */
+    font-style: normal;
+}
+
+/* HYMingYue-95W */
+@font-face {
+    font-family: 'HYMingYue';
+    src: url('../fonts/HYMingYue-95W.ttf') format('truetype');
+    font-weight: 900;  /* Heavy 字重 */
+    font-style: normal;
+}

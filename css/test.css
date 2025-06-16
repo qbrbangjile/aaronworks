@@ -1,0 +1,15 @@
+@import url(fonts.css);
+
+body {
+    background-color: #FAF5E5;
+}
+
+h1 {
+    font-family: "vivotype", sans-serif;
+	font-weight: 600;
+	font-size: 32px;
+	letter-spacing: -1px;
+	margin: 0;
+
+    
+}

@@ -1,0 +1,193 @@
+@import url(fonts.css);
+
+.works-detail {
+    display: flex;
+    align-items: flex-start;
+    height: 300px;
+    margin-bottom: 200px;
+    margin-top: 120px;
+}
+
+.detail-1 {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 60px;
+}
+
+.detail-1 div h2,
+.detail-1 div p {
+    margin: 5px;
+}
+
+.detail-1 div h2 {
+    font-size: 24px;
+    font-family: "HYMingYue", sans-serif;
+    font-weight: 800;
+    line-height: 20px;
+}
+
+.detail-1 div p {
+    font-size: 18px;
+    font-family: "ChillDINGothic", sans-serif;
+    font-weight: 500;
+    line-height: 27px;
+}
+
+.detail-2 {
+    width: 70%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.detail-2 h1,
+.detail-2 h2,
+.detail-2 p {
+    margin: 0;
+}
+
+.detail-2 h1 {
+    font-size: 50px;
+    font-family: "HYMingYue", sans-serif;
+    font-weight: 800;
+    line-height: 45px;
+    margin-bottom: 20px;
+}
+
+.detail-2 h2 {
+    font-size: 26px;
+    font-family: "HYMingYue", sans-serif;
+    font-weight: 800;
+    line-height: 20px;
+    margin-bottom: 20px;
+}
+
+.detail-2 p {
+    font-size: 18px;
+    font-family: "ChillDINGothic", sans-serif;
+    font-weight: 500;
+    line-height: 27px;
+}
+
+.img-sets img {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    display: block;
+}
+
+.img-first {
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+}
+
+.img-last {
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+
+.img-rounded {
+    border-radius: 25px;
+}
+
+.next-page {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 120px;
+    margin-bottom: 200px;
+}
+
+.next-page a {
+    position: relative;
+    font-size: 45px;
+    font-family: "HYMingYue", sans-serif;
+    display: flex;
+    align-items: center;
+    text-decoration: none; 
+    color: #1d262b;
+}
+
+.next-page a::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 20%;
+    width: 0;
+    height: 5px;
+    background-color: #dca54a;
+    border-radius: 6px;
+    opacity: 0;
+
+    transition: width 0.3s ease, opacity 0.3s ease;
+}
+
+.next-page a i {
+    font-size: 45px;
+}
+
+.gallery a img {
+    width: 150px;
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.introduction-normal {
+    display: flex;
+    justify-content: space-between;
+
+    width: 100%;
+    margin-top: 60px;
+}
+
+.introduction-text {
+    width: 30%;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.introduction-text h1,
+.introduction-text p {
+    margin: 0;
+}
+
+.introduction-text h1 {
+    font-size: 50px;
+    font-family: "HYMingYue", sans-serif;
+    font-weight: 800;
+    line-height: 45px;
+
+    word-wrap: break-word;
+}
+
+.introduction-text p {
+    font-size: 18px;
+    font-family: "ChillDINGothic", sans-serif;
+    font-weight: 500;
+    line-height: 27px;
+}
+
+.introduction-img {
+    width: 65%;
+}
+
+.introduction-img img {
+    width: 100%;
+    border-radius: 15px;
+    filter: saturate(120%);
+}
+
+#watch-more {
+    text-align: left;
+    color: #dca54a;
+}
